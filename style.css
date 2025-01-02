@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.split-container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.split-section {
+    flex: 1;
+    padding: 4rem 2rem;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/* ERP Section Styles */
+.erp-section {
+    background: #111827;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.erp-section:hover {
+    flex: 1.5;
+}
+
+/* Websites Section Styles */
+.websites-section {
+    background: white;
+    color: #111827;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.websites-section:hover {
+    flex: 1.5;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.split-section:hover .section-content {
+    opacity: 1;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid currentColor;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.erp-section .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.websites-section .project-card {
+    background: rgba(17, 24, 39, 0.05);
+    border: 1px solid rgba(17, 24, 39, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.erp-section .tech-tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.websites-section .tech-tag {
+    background: rgba(17, 24, 39, 0.1);
+    color: #111827;
+}
+
+.tech-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.feature-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Introduction Section Styles */
+.intro-section {
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo {
+    font-size: 8.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    color: white;
+}
+
+.logo-text {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.quote {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    color: white;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    color: #111827;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.left-20 {
+    left: -40%;
+}
+
+.left-30 {
+    left: 0%;
+}
+
+.left-40 {
+    left: 40%;
+}
+
+.vh-100 {
+    height: 130vh;
+}
+
+.intro-logo {
+    position: absolute;
+    opacity: 0.05;
+    height: 150vh;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: rotate(45deg) translateY(0);
+    }
+    50% {
+        transform: rotate(45deg) translateY(-20px);
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/* TELEPHONE */
+@media (max-width: 768px) {
+
+    .quote {font-size:1.2rem; line-height: 1.4;}
+
+    .intro-section { min-height: 62vh }
+    .intro-logo {
+        position:absolute;
+        height: 300px;
+        left:17%;
+        top:0;
+
+        opacity:90% !important;
+    }
+
+
+    .intro-logo {
+        opacity: 0.05;
+        
+    }
+
+
+    .logo {
+        font-size: 3.5rem;
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-container::after {
+        display: none;
+    }
+
+    .erp-section,
+    .websites-section {
+        clip-path: none;
+        padding: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+
+/* Team Section Styles */
+.team-section {
+    background: #111827;
+    color: white;
+    padding: 4rem 2rem;
+    min-height: 70vh;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.team-header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.team-member {
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.team-member-role {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 2rem 1rem;
+    }
+
+    .team-title {
+        font-size: 2rem;
+    }
+
+    .team-members {
+        gap: 2rem;
+    }
+
+    .team-member-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Add placeholder image styling */
+.team-member-image img[src^="assets/"] {
+    background: rgba(255, 255, 255, 0.1);
+}
